@@ -623,6 +623,7 @@ namespace Assimp
         /// <param name="nativeValue">Output native value</param>
         void IMarshalable<Mesh, AiMesh>.ToNative(IntPtr thisPtr, out AiMesh nativeValue)
         {
+            nativeValue = new AiMesh();
             nativeValue.Name = new AiString(m_name);
             nativeValue.Vertices = IntPtr.Zero;
             nativeValue.Normals = IntPtr.Zero;
