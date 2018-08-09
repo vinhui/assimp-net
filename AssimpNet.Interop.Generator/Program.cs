@@ -296,7 +296,7 @@ namespace AssimpNet.Interop.Generator
         {
             //Make sure we import IntPtr::op_explicit(void*)
             MethodInfo opExplicitInfo = typeof(IntPtr).GetMethod("op_Explicit", new Type[] { typeof(void*) });
-            MethodReference opExplicitRef = method.Module.Import(opExplicitInfo);
+            MethodReference opExplicitRef = method.Module.ImportReference(opExplicitInfo);
 
             method.Body.Instructions.Clear();
             method.Body.InitLocals = true;
@@ -345,7 +345,7 @@ namespace AssimpNet.Interop.Generator
         {
             //Make sure we import IntPtr::op_explicit(void*)
             MethodInfo opExplicitInfo = typeof(IntPtr).GetMethod("op_Explicit", new Type[] { typeof(void*) });
-            MethodReference opExplicitRef = method.Module.Import(opExplicitInfo);
+            MethodReference opExplicitRef = method.Module.ImportReference(opExplicitInfo);
 
             method.Body.Instructions.Clear();
             method.Body.InitLocals = true;
