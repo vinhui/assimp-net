@@ -1465,8 +1465,8 @@ namespace Assimp.Unmanaged
         public const String DefaultWindows32BitPath = "assimp-vc140-mt.dll";
         public const String DefaultWindows64BitPath = "assimp-vc140-mt.dll";
 
-        public const String DefaultLinux32BitPath = "Assimp32.so";
-        public const String DefaultLinux64BitPath = "Assimp64.so";
+        public const String DefaultLinux32BitPath = "libassimp.so";
+        public const String DefaultLinux64BitPath = "libassimp.so";
 
         public static AssimpLibraryImplementation CreateRuntimeImplementation()
         {
